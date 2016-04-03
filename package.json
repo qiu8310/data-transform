@@ -8,7 +8,8 @@
     "build": "rimraf dist && tsc --outDir dist src/data-transform.ts -d && webpack && webpack -p",
     "test": "karma start",
     "test:watch": "npm run test -- --auto-watch --no-single-run",
-    "postinstall": "typings install"
+    "postinstall": "typings install",
+    "coveralls": "cat coverage/Phantom*/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "files": [
     "dist/",
@@ -39,6 +40,7 @@
     "cz-conventional-changelog": "^1.1.5",
     "ghooks": "^1.1.1",
     "istanbul-instrumenter-loader": "^0.2.0",
+    "jasmine-core": "^2.4.1",
     "json5": "^0.4.0",
     "json5-loader": "^0.6.0",
     "karma": "^0.13.22",
@@ -48,6 +50,7 @@
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
+    "phantomjs-prebuilt": "^2.1.7",
     "rimraf": "^2.5.2",
     "source-map-loader": "^0.1.5",
     "tslint": "^3.6.0",
