@@ -26,6 +26,7 @@
 
 * browser
 
+  - **[对于 IE < 9 的浏览器需要使用 es5-shim](https://github.com/es-shims/es5-shim)**
   - 先在 html 中引用脚本
 
     ```html
