@@ -1,0 +1,66 @@
+{
+  "name": "data-transform",
+  "version": "0.0.1",
+  "description": "naming, alias, compute, drop, map data from one to another.",
+  "main": "dist/data-transform.js",
+  "scripts": {
+    "clean": "rimraf dist coverage",
+    "build": "rimraf dist && tsc --outDir dist src/data-transform.ts -d && webpack && webpack -p",
+    "test": "karma start",
+    "test:watch": "npm run test -- --auto-watch --no-single-run",
+    "postinstall": "typings install"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiu8310/data-transform.git"
+  },
+  "keywords": [
+    "transform",
+    "naming",
+    "alias",
+    "compute",
+    "drop",
+    "map"
+  ],
+  "author": "Mora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qiu8310/data-transform/issues"
+  },
+  "homepage": "https://github.com/qiu8310/data-transform#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^0.16.2",
+    "cz-conventional-changelog": "^1.1.5",
+    "ghooks": "^1.1.1",
+    "istanbul-instrumenter-loader": "^0.2.0",
+    "json5": "^0.4.0",
+    "json5-loader": "^0.6.0",
+    "karma": "^0.13.22",
+    "karma-coverage": "^0.5.5",
+    "karma-jasmine": "^0.3.8",
+    "karma-mocha-reporter": "^2.0.0",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "rimraf": "^2.5.2",
+    "source-map-loader": "^0.1.5",
+    "tslint": "^3.6.0",
+    "tslint-loader": "^2.1.3",
+    "typescript": "^1.8.9",
+    "validate-commit-msg": "^2.5.0",
+    "webpack": "^1.12.14"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "./node_modules/validate-commit-msg/index.js"
+    }
+  }
+}
