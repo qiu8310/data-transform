@@ -1,4 +1,7 @@
 # data-transform
+[![NPM version](https://badge.fury.io/js/data-transform.svg)](https://npmjs.org/package/data-transform)
+[![Build Status](https://travis-ci.org/qiu8310/data-transform.svg?branch=master)](https://travis-ci.org/qiu8310/data-transform)
+[![Coverage Status](https://coveralls.io/repos/qiu8310/data-transform/badge.png)](https://coveralls.io/r/qiu8310/data-transform)
 
 将源数据转换成一个全新的规范的数据
 
