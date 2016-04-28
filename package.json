@@ -1,6 +1,6 @@
 {
   "name": "data-transform",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "naming, alias, compute, drop, map data from one to another.",
   "main": "dist/data-transform.js",
   "scripts": {
@@ -8,7 +8,6 @@
     "build": "rimraf dist && tsc --outDir dist src/data-transform.ts -d && webpack && webpack -p",
     "test": "karma start",
     "test:watch": "npm run test -- --auto-watch --no-single-run",
-    "postinstall": "typings install",
     "coveralls": "cat coverage/Phantom*/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "files": [
